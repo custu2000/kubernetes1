@@ -4,11 +4,11 @@ kind: Pod
 metadata:
     name: redis-pod
     labels:
-        names: redis-app-pod
+        name: redis-app-pod
         app: demo-voting-app       
 spec:
     containers:
-        - name: redis
-          image: redis
-          ports:
-          - containerPort: 6379
+    - name: redis
+      image: redis
+      ports:
+      - containerPort: 6379

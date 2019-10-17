@@ -3,13 +3,13 @@ kind: Service
 metadata:
     name: redis
     labels:
-        name: redis-service
-        app: demo-voting-app
+      name: redis-service
+      app: demo-voting-app
 spec:
     ports:
-        - targetPort: 6379
-          port: 6379
+    - targetPort: 6379
+      port: 6379
     selector:
-        name: redis-pod
-        paid: demo-voting-app
+      name: redis-app-pod
+      app: demo-voting-app
 

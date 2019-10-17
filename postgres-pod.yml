@@ -3,7 +3,7 @@ kind: Pod
 metadata:
     name: postgre-pod
     labels:
-        names: postgres-pod
+        name: postgres-pod
         app: demo-voting-app       
 spec:
     containers:

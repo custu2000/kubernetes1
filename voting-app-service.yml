@@ -6,10 +6,12 @@ metadata:
         name: voting-service
         app: demo-voting-app
 spec:
-    type: LoadBalancer
+    type: NodePort
     ports:
         - targetPort: 80
           port: 80
+          nodePort: 30000 
+
     selector:
         name: voting-app-pod
-        paid: demo-voting-app
+        app: demo-voting-app

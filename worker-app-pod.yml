@@ -3,9 +3,9 @@ kind: Pod
 metadata:
     name: worker-app-pod
     labels:
-        names: worker-app-pod
+        name: worker-app-pod
         app: demo-voting-app       
 spec:
     containers:
         - name: worker-app
-          image: dockersamples/examplevotingapp_worker
+          image: dockersamples/examplevotingapp_worker 
